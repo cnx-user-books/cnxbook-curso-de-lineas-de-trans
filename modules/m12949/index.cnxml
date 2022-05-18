@@ -1,0 +1,131 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Linies de tx</title>
+  <metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>04835c18-c322-40cc-b988-81a45b7b48b2</md:uuid>
+</metadata>
+  <content>
+    <section id="s0">
+			<title>Introducción</title>
+			<para id="p0a">Este tutorial presenta los conceptos <emphasis>básicos</emphasis> de líneas de transmisión (<foreign>Transmission lines</foreign>), 
+			así como una visualización y demostración interactiva de los parámetros 
+			que se utilizan en el análisis de líneas y su relación. <link url="http://lavisit.upf.edu">LAVISIT
+  			Home</link></para>
+		</section>
+
+		<section id="s1">
+			<title>Objetivos</title>
+			<para id="p1a">Repasar y afianzar los parámetros básicos que definen el comportamiento de las líneas de transmisión. 
+			Comprender y experimentar la relación entre los parámetros característicos de las líneas de transmisión 
+			y el comportamiento de las señales en éstas.
+			Comprender y experimentar la formación de ondas estacionarias en las líneas de transmisión.</para>
+		</section>
+
+		<section id="s2">
+			<title>Introducción Teórica</title>
+			<section id="s2_0">
+				<title>Modelo de líneas de transmisión</title>
+				<para id="p2_0a">En la figura siguiente se muestra el modelo básico de las líneas de transmisión.</para>
+				<para id="p2_0b">En la parte izquierda de la figura se muestra el equivalente de Thèvenin de la 
+				fuente generadora de la señal. En la parte derecha se muestra el equivalente del 
+				receptor según se observa desde la línea de transmisión, que consiste en una impedancia 
+				de carga conectada al final de la línea.</para>
+				<para id="p2_0c">Entre emisor y receptor está situada la línea cuyo comportamiento viene definido por las 
+				características geométricas y electromagnéticas de ésta, así como por su longitud y 
+				frecuencia de la señal.</para>
+			</section>
+			<section id="s2_1">
+				<title>Entrega de señal a la línea de transmisión</title>
+				<para id="p2_1a">Toda señal que se entrega a una línea de transmisión puede
+				descomponerse en una suma de señales sinusoidales (teorema de Fourier) para las cuales
+				es relativamente sencillo analizar el comportamiento de la señal a través de la línea.</para>
+				<para id="p2_1b">Es por esto que para estudiar las líneas de transmisión siempre se modela la señal de entrada como una
+				señal sinusoidal con una amplitud y fase determinada. Las fuentes de señal, que pueden ser muy diversas 
+				(desde un micrófono, hasta un amplificador o un módem) se ven desde la línea de transmisión como un circuito 
+				equivalente de Thèvenin que se modela como un generador ideal (Vg o Vs) y una impedancia en serie (Zg o Zs).</para>
+				<para id="p2_1c">Por regla general se busca que la impedancia equivalente del equipo que entrega la señal tenga el valor 
+				conjugado de la impedancia característica de la línea (cuando la impedancia característica toma un valor real, 
+				se concreta en que Zs=Zo), al objeto de evitar que existan reflexiones en el principio de la línea que supongan 
+				pérdidas en la señal entregada al final de la línea.</para>
+			</section>
+			<section id="s2_2">
+				<title>Parámetros de la línea de transmisión</title>
+				<para id="p2_2a">Las líneas de transmisión tienen un comportamiento distinto según sea su geometría, y los 
+				materiales utilizados para los conductores y dieléctrico. Así mismo, la frecuencia de la señal determina 
+				también en parte el comportamiento que tendrá la línea de transmisión. Estas propiedades determinan los 
+				valores de R, L, G y C, denominados parámetros concentrados de la línea.</para>
+				<para id="p2_2b">Para una frecuencia determinada cada línea de transmisión se suele caracterizar por tres parámetros 
+				fundamentales que se obtienen a partir de los valores de los parámetros concentrados:</para>
+				<para id="p2_2c">La impedancia característica (Zo) medida en Ohmios y que, en general, toma un valor complejo. Para 
+				frecuencias elevadas y con valores de resistencia y conductancia bajos,  Zo toma un valor real que depende exclusivamente 
+				del valor de L y C, siendo en la práctica independiente de la frecuencia. Así, por ejemplo, en los cables coaxiales utilizados 
+				para señales de televisión Zo tiene un valor típicamente de 75 W, válido para todas las frecuencias utilizadas en la TV comercial.</para>
+				<para id="p2_2d">La atenuación de la línea (denotada por la letra griega a), que indica la pérdida de potencia por 
+				unidad de longitud y que suele venir medida en Np/m. o en dB/m. En segmentos de línea de elevada longitud establece 
+				el límite de la longitud de la línea, ya que la potencia de la señal se va reduciendo a lo largo de la línea y los 
+				receptores tienen un umbral mínimo de potencia de recepción.</para>
+				<para id="p2_2e">La velocidad de fase (Vf): Indica la velocidad a la que "viaja" la onda a lo largo de la línea. 
+				En el caso ideal (atenuación nula y dieléctrico de vacío), la velocidad de la onda es la máxima que se puede alcanzar: c, la 
+				velocidad de la luz. En general, la velocidad de fase siempre será menor que c. La velocidad de fase está directamente relacionada 
+				con la llamada constante de fase (b) a través de la fórmula Vf=w/b. Cuando las líneas trabajan a frecuencias elevadas y las 
+				pérdidas son despreciables la velocidad de fase está marcada exclusivamente por la calidad del dieléctrico utilizado para aislar 
+				los conductores entre sí, a través de la ecuación Vf= c/ er, dónde c es la velocidad de la luz (3x108 m/s) y er es la 
+				permitividad relativa del dieléctrico. En el caso particular del vacío o el aire seco,  er=1 y, en consecuencia, Vf=c, 
+				tal como se indicaba anteriormente.</para>
+			</section>
+			<section id="s2_3">
+				<title>Impedancias de carga</title>
+				<para id="p2_3a">La impedancia de carga (ZL) modela la impedancia de entrada del equipo que se sitúa al final de la línea para 
+				recibir y procesar la señal. Al igual que la impedancia del generador que se sitúa al principio de la línea, en general se procura 
+				que el valor de ZL sea el conjugado de Zo para evitar que se produzcan reflexiones en el punto dónde se conectan la línea y el equipo.</para>
+			</section>
+			<section id="s2_4">
+				<title>Reflexiones en líneas de transmisión</title>
+				<para id="p2_4a">Si existe una adaptación completa en la línea (Zo=ZL*), la carga absorbe toda la energía que le entrega la línea y no 
+				se produce reflexiones en el punto de conexión entre ambas.</para>
+				<para id="p2_4b">Normalmente no se producirá una adaptación completa, al no cumplirse que Zo=ZL*. Esto supondrá que parte de la energía 
+				que llega al final de la línea se refleja hacia el generador, no pudiéndose entregar a la carga. Cuanto mayor sea la diferencia entre 
+				ambos valores, mayor será esta reflexión y, por tanto, se entregará menos potencia a la carga.</para>
+				<para id="p2_4c">El coeficiente de reflexión (r) modela  la medida en que se refleja la señal. Su valor viene determinado por Zo y ZL 
+				a través de la ecuación r= (ZL-Zo)/(ZL+Zo). Para valores reales de Zo y ZL, un coeficiente de 1 indica que toda la señal se refleja 
+				(el caso por ejemplo, de una línea abierta, sin carga en el extremo receptor) y un coeficiente de 0 indica que toda la señal se entrega 
+				a la carga (Zo=ZL*). El valor del módulo del coeficiente de reflexión se mueve entre 0 y 1 y se puede interpretar como el tanto por uno 
+				en que se refleja la señal.</para>
+				<para id="p2_4d">Cuando existe señal reflejada (|r|&gt;0), la tensión en la línea está formada por la suma de señal entregada al principio 
+				de la línea y la señal reflejada. A esta suma se le conoce por el nombre de "onda estacionaria". La onda estacionaria que se forma en la 
+				línea tiene la forma que se indica en la figura siguiente (trazo interior violeta).</para>
+				<para id="p2_4e">La línea amarilla indica la envolvente de los valores que alcanza la amplitud de la onda estacionaria, que como puede 
+				observarse se repiten periódicamente (concretamente cada l/2, dónde l  es la longitud de onda de la señal).</para>
+				<para id="p2_4f">Los valores máximos y mínimos de la envolvente varían en función del coeficiente de reflexión. Si el coeficiente de 
+				reflexión es cero (línea e impedancia de carga adaptadas), la envolvente es plana, ya que sólo está presente en la línea la señal incidente 
+				que será una sinusoide perfecta y por tanto en todos los puntos alcanzará el mismo valor máximo.</para>
+				<para id="p2_4g">En el extremo, cuando el módulo del coeficiente de reflexión es 1 y, en consecuencia, toda la señal se refleja, la onda 
+				estacionaria tiene propiedades interesantes: existen puntos en la línea en dónde la suma de la señal incidente y la señal reflejada es el 
+				doble de la señal incidente y hay otros puntos en la línea dónde la suma de ambas es siempre cero, al tener ambas la misma amplitud (reflexión 
+				completa) y encontrarse desfasadas 180o.</para>
+				<para id="p2_4h">Como regla general, la diferencia entre los valores máximos de la envolvente de la onda estacionaria y los valores mínimos, 
+				será tanto mayor cuanto mayor sea el coeficiente de reflexión (o, visto de otra forma, cuanto mayor sea la diferencia entre la impedancia 
+				característica de la línea y la impedancia de carga). Al revés, cuanto más semejantes sean Zo y ZL, tendremos un coeficiente de reflexión más 
+				pequeño, la onda reflejada será menor y la onda estacionaria será más parecida a la onda incidente, llegando en el caso extremo (|r|=0), a que 
+				la onda estacionaria coincide con la onda incidente, siendo su envolvente plana al alcanzarse los máximos de amplitud en todos los puntos de la 
+				línea.</para>
+			</section>
+			<section id="s2_5">
+				<title>Valores de tensión y corriente a lo largo de la línea de transmisión</title>
+				<para id="p2_5a">De acuerdo a la teoría de líneas de transmisión, la tensión en un punto cualquiera de la línea (z) se puede obtener a partir 
+				de la siguiente ecuación para líneas sin pérdidas: V(z) = Vi(e-az  e-jbz  + r  e-a(2l-z)  e- jb(2l-z))
+				 Dónde Vi se corresponde con la tensión al principio de la línea, z con la posición medida desde el inicio de la línea yb   con la constante de fase.</para>
+				<para id="p2_5b">Cuando la reflexión es completa (r=0), no existe onda reflejada y la onda a lo largo de la línea tiene la expresión:
+				 V(z) = e-az e-jbz 
+				 <quote display="inline" class="no-marks">Quote inline</quote>. Lo cual indica que la amplitud se va reduciendo en el coeficiente e-az  y la fase cambia a lo larga de la línea un ángulo -bz radianes.
+				 Cuando la línea no tiene pérdidas o estas son despreciables, tendremos que a=0 y en consecuencia: 
+				 <quote display="block" id="idm4618656">Block quote</quote>V(z) = Vi(e-jbz + r e- jb(2l-z))
+				 En este último caso, si r=1, (reflexión completa) tendremos :
+				 V(z) = Vi(e-jbz + e- jb(2l-z))
+				 En lo que respecta a la intensidad en la línea, el comportamiento es similar al de la tensión, ya que <cite><cite-title>Somos lo que comemos</cite-title></cite> I(z)= V(z)/Zo.</para>
+			</section>
+			<section id="s2_6">
+				<para id="p2_6a">Sin título....<note type="aviso!!" id="idm5307952"><label>Aviso!!</label>Fumar es malo<cite><cite-title>Las autoridades sanitarias</cite-title></cite></note></para>
+				<para id="p2_6b"><note id="idm5967168">Voy a insertar una nota</note>Ésto es un term: <term>un term</term></para>
+			</section>
+		</section>  </content>
+  
+</document>

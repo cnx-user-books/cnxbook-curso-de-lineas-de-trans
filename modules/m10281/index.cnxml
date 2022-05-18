@@ -1,0 +1,198 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+
+  <title>Grilling the Best Steak</title>
+  
+  <metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>8f0108e1-5467-4ffa-8d73-28f7bb4e2d06</md:uuid>
+</metadata>
+
+  <content>
+    <para id="intro">
+      I have eaten many steaks in my life and none have been
+      more satisfying than the backyard-grill cooked steak.
+      Maybe this is because of the relaxing nature of drinking
+      a beer, being outside, and lounging that accompanies the
+      grilling procedure.  Maybe it is because of the aroma of
+      the grill and the beef perfectly seasoned to your taste.  
+      Either way, this module shows
+      how a good steak can be prepared.
+    </para>
+    
+    <figure orient="horizontal" id="horfig">
+      <title>Steaks</title>
+      <subfigure id="subfigtbone1">
+	<title>T-Bone</title>
+	<media id="idp31232" alt=""><image src="../../media/tbone.jpg" mime-type="image/jpeg"/></media>
+      </subfigure>
+      <subfigure id="subfingnystrip1">
+	<title>New York Strip</title>
+	<media id="idp170880" alt=""><image src="../../media/ny_strip.png" mime-type="image/png"/></media>
+      </subfigure>
+      <caption>
+	Upon successful completion of these modules, you
+	should be able to grill a steak that looks just as good!
+      </caption>
+    </figure>
+
+    <section id="ingredsec">
+      <title>Ingredients</title>
+      <para id="ingredients">
+	Before we begin to cook I have compiled a list of
+	ingredients.
+	<list id="ingredlist">
+	  <title>Ingredients</title>
+	  <item>Salt</item>
+	  <item>Fresh ground pepper</item>
+	  <item>Lime</item>
+	  <item>Beer</item>
+	  <item>Chili powder</item>
+	  <item>T-Bone</item>
+	</list>
+	
+	<definition id="tbonedef">
+	  <term>T-Bone</term>
+	  <meaning id="idp624">
+	    "The T-bone steak is cut between 1 and 3 inches thick and
+	    comes from the center section of the short loin. This
+	    steak is characterized by its T-shape bone, has a
+	    fine-grained shell and a small tenderloin eye,"
+	    <cite><cite-title>http://www.chophousecalgary.com/steak.html</cite-title></cite>. 
+	  </meaning>
+	</definition>
+      </para>
+    </section>
+    
+    <section id="marinadesec">
+      <title>Marinade</title>
+      <para id="marinate">
+	To ensure the best flavor possible, it is necessary to marinate
+	the beef.  A steak <term>marinates</term> when left to sit in 
+	a prepared sauce, or <term>marinade</term>, where it will absorb
+	the flavors of the ingredients.  Marinating may take as little
+	as 15 minutes or as long as 6 hours and should
+	<emphasis>always</emphasis> be done in the refrigerator and
+	<emphasis>not</emphasis> at room temperature. 
+      </para>
+
+      <list id="marinade" list-type="enumerated">
+	<title>Marinade</title>
+	<item>pour beer into large bowl</item>
+	<item>add chili powder to taste</item>
+	<item>squeeze half lime into beer marinade</item>
+	<item>place steak in beer, let soak for 30 minutes</item>
+	<item>before grilling rub salt and pepper onto steak</item>
+      </list>
+    </section>
+    
+    <section id="grilling">
+      <title>Grilling</title>
+      <para id="grillp1">
+	Grilling is pretty easy.  After having heated the coals or
+	igniting the grill, start cooking the meat.  I would recommend
+	periodically checking the meat and when you start to see it
+	being cooked on top, flip it over.  Then, wait until fully
+	cooked.  Below you will find a table of cooking temperatures.
+	Please note the safety warning at the bottom.
+      </para>
+
+      <table frame="all" id="grilltemp" summary="">
+	<tgroup cols="2" align="left" colsep="1" rowsep="1">
+	  <thead valign="top">
+	    <row>
+	      <entry>
+		Temperature(F)
+	      </entry>
+	      <entry>
+		Description
+	      </entry>
+	    </row>
+	  </thead>
+	  <tbody valign="top">
+	    <row>
+	      <entry>
+		140
+	      </entry>
+	      <entry>
+		Rare
+	      </entry>
+	    </row>
+	    <row>
+	      <entry>
+		150
+	      </entry>
+	      <entry>
+		Medium Rare
+	      </entry>
+	    </row>
+	    <row>
+	      <entry>
+		160
+	      </entry>
+	      <entry>
+		Medium
+	      </entry>
+	    </row>
+	    <row>
+	      <entry>
+		165
+	      </entry>
+	      <entry>
+		Medium Well
+	      </entry>
+	    </row>
+	    <row>
+	      <entry>
+		170
+	      </entry>
+	      <entry>
+		Well
+	      </entry>
+	    </row>
+	  </tbody>
+	</tgroup>
+      </table>
+
+
+
+      <para id="warning">
+	Remember that for safety's sake, always cook your steak to
+	160 F or until meat is no longer pink.
+      </para>
+
+    </section>
+
+    <section id="conclusions">
+      <title>Rounding Off the Experience</title>
+      <para id="concp1">
+	The experience of grilling a steak in your own back yard is
+	part of what makes the home cooked steak so enjoyable.  It is
+	necessary to cook in the evening as it is getting cool and to
+	enjoy your beverage of choice.  Finally, one of the best ways to
+	enjoy a steak is in the company of your friends.
+      </para>
+      <para id="cookingexam">
+	To make sure that you were paying attention to my tutorial, I've
+	included a one question exam:
+      </para>
+      <exercise id="grilltest">
+	<problem id="idp119872">
+	  <para id="grilltestp1">
+	    For food safety, a steak should be cooked to a minimum
+	    temperature of what?
+	  </para>
+	</problem>
+	<solution id="idp387840">
+	  <para id="sol1p1">
+	    160 F or until the juices run clear and the meat is no
+	    longer pink
+	  </para>
+	</solution>
+      </exercise>
+      <para id="tobecontinued">
+	For more marinades see
+	the <link url="http://www.2eatcab.com">Angus Beef website</link>.
+	Finally, a good resource is the <cite><cite-title>Steak Lover's Cookbook --
+	  William Rice; Paperback</cite-title></cite>.  
+      </para>
+    </section>
+  </content>
+</document>
